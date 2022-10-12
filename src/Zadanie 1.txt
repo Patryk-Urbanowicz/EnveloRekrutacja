@@ -1,0 +1,9 @@
+1.A. W jakim celu używa się klas abstrakcyjnych, a w jakim interfejsów?
+
+Klasy abstrakcyjnej używa się, jeżeli będziemy tworzyć klasy które są do siebie podobne, rozszerzając klasę z której dziedziczą, ponadto możemy dziedziczyć z tylko jednej klasy.
+Interfejsu używa się żeby zapewnić pewną funkcjonalność, którą klasa ma oferować. Funkcje implementowane przez interfejs zawsze są publiczne. Klasa może oferować wiele funkcjonalności, implementować wiele interfejsów.
+
+
+1.B. Czym różni się tablica od listy liniowej?
+
+Tablica ma stały rozmiar, lista liniowa natomiast zmienny. W przypadku listy liniowej możemy w łatwy sposób usunąć/dodać element na przykład z jej środka i indeksy "przesuną" się - w przypadku tablicy mielibyśmy albo pustą komórkę albo trzeba by ją na nowo inicjalizować. Oznacza to że tablica jest znacznie mniej elastyczna. Lista liniowa musi natomiast zawierać referencję do następnego węzła, więc zajmie nieco więcej pamięci do przechowania takiej samej ilości zmiennych. Tablice są za to szybsze w dostępie do konkretnego elementu - "przeskakujemy" w pamięci o określoną liczbę komórek do elementu który nas interesuje, a w liście liniowej musimy przejść po kolejnych węzłach.
