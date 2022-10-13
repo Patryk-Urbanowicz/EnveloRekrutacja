@@ -27,13 +27,21 @@ public class Zadanie3 {
         List<String> quotes = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         String quote;
-        System.out.println("Type \"next\" to get Kanye's quote");
+        String input;
+        System.out.println("Type \"next\" to get Kanye's quote.");
+        System.out.println("Type \"exit\" to exit.");
 
         while(true) {
-            if (sc.nextLine().equals("next")) {
-                while (quotes.contains((quote = getQuote()))) {}
+            input = sc.nextLine();
+            if (input.equals("next")) {
+                do {
+                    quote = getQuote();
+                } while (quotes.contains(quote));
                 quotes.add(quote);
                 System.out.println(quote);
+            }
+            else if (input.equals("exit")) {
+                break;
             }
         }
     }
